@@ -1,6 +1,6 @@
 # Blog-Api (SkyLine API)
 
-## Project Description:
+## Project Description
 
 The Blog-API project is a full CRUD operation back-end project. The project utilizes NodeJS, Express, Mongoose, and MongoDB.
 My specific blog allows the user to login and create their own skyscraper. The user can enter the skyscraper's name, height
@@ -23,11 +23,11 @@ wrong credentials they'll be prompted to enter the correct email and password.
 When a user profile is created, a token is created and the password is hashed and encrypted using
 the bcrpyt dependency. The token is used on the backend to get the user's information. 
 
-## Skyscraper Routes:
+## Skyscraper Routes
 
 Using the full CRUD operation, there is a Create, Read, Update, and Delete route.
 
-Routes:
+Routes
 1. Create Route - I created a POST route in Postman called Create Skyscraper.
                   This allows the user to create a skyscraper object.
 
