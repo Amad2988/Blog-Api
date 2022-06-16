@@ -7,10 +7,10 @@ My specific blog allows the user to login and create their own skyscraper. The u
 in feet and or meters and a location. Users must also create login information. 
 
 ## Technologies Used
-..* NodeJS
-..* Express
-..* Mongoose
-..* MongoDB
+- NodeJS
+- Express
+- Mongoose
+- MongoDB
 
 ## Authorization
 
