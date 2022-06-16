@@ -11,7 +11,7 @@ const skyscraperSchema = mongoose.Schema(
         },
         height_in_meters: {
             type: Number,
-            required: true
+            
         },
         number_of_stories: {
             type: Number,

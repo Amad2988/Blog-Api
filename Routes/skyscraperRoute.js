@@ -37,8 +37,8 @@ router.get('/:id', async (req, res) => {
 router.put('/:id', async (req, res) => {
     const id = req.params.id
     const newSkyScraperData = req.body
-    try{clear
-        const skyscraper = await skyscraperModel.findByIdAndUpdate(id, newSkyScraperData)
+    try{
+        const skyscraper = await skyscraperModel.findByIdAndUpdate(id, newSkyScraperData, {new: true})
         res.status(202).json(skyscraper)
     } catch (error) {
         console.log(error)
@@ -49,7 +49,7 @@ router.delete('/:id', async (req, res) => {
     const id = req.params.id
     try{
         const skyscraper = await skyscraperModel.findByIdAndDelete(id)
-        res.status(200).json({msg: 'Skyscraper Deleted'})
+        res.status(200).json({msg: 'Skyscraper Demolished'})
     } catch (error) {
         console.log(error);
     }
