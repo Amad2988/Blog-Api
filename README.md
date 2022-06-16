@@ -54,6 +54,6 @@ Routes:
 2. Read Route - I created a GET route in Postman called Get User
                 This route displays all the users created.
 
-# Auth Route
+## Auth Route
 
 I created a Login route which is a POST route in Postman. This route lets users login with their credentials.
