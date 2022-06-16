@@ -4,7 +4,7 @@
 
 The Blog-API project is a full CRUD operation back-end project. The project utilizes NodeJS, Express, Mongoose, and MongoDB.
 My specific blog allows the user to login and create their own skyscraper. The user can enter the skyscraper's name, height
-in feet and meters and a location.
+in feet and or meters and a location. Users must also create login information. 
 
 ## Technologies Used
 1. NodeJS
@@ -57,3 +57,5 @@ Routes:
 ## Auth Route
 
 I created a Login route which is a POST route in Postman. This route lets users login with their credentials.
+If their credentials are incorrect they will receive an error message and will be prompted to provide the
+correct information.
