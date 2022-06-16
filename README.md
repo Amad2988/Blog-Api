@@ -1,29 +1,29 @@
 # Blog-Api
 
-Project Description:
+#Project Description:
 
 The Blog-API project is a full CRUD operation back-end project. The project utilizes NodeJS, Express, Mongoose, and MongoDB.
 My specific blog allows the user to login and create their own skyscraper. The user can enter the skyscraper's name, height
 in feet and meters and a location.
 
-Technologies Used
+#Technologies Used
 1. NodeJS
 2. Express
 3. Mongoose
 4. MongoDB
 
-Authorization
+#Authorization
 
 Users must create a login credentials. This consists of a username, email, and they must create a password.
 The user must provide a valid email address and they must create a valid password. If the user enters the
 wrong credentials they'll be prompted to enter the correct email and password. 
 
-Encryption
+#Encryption
 
 When a user profile is created, a token is created and the password is hashed and encrypted using
 the bcrpyt dependency. The token is used on the backend to get the user's information. 
 
-Skyscraper Routes:
+#Skyscraper Routes:
 
 Using the full CRUD operation, there is a Create, Read, Update, and Delete route.
 
