@@ -1,9 +1,10 @@
 const express = require('express')
 const skyscraperModel = require('../Models/skyscraperSchema')
+const authMiddleware = require('../Middleware/authMiddleware')
 
 const router = express.Router()
 
-router.get('/', async (req, res) => {
+router.get('/',authMiddleware,async (req, res) => {
     try{
         const skyscraper = await skyscraperModel.find()
         res.status(200).json(skyscraper)

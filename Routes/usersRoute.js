@@ -7,7 +7,7 @@ const authMiddleware = require('../Middleware/authMiddleware')
 
 const router = express.Router()
 
-router.get('/', authMiddleware, async (req, res) => {
+router.get('/', async (req, res) => {
     try{const users = await userModel.find()
         res.status(200).json(users)
     } catch(error){
