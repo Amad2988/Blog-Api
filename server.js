@@ -17,7 +17,7 @@ app.use('/skyscrapers', skyscraperRouter)
 app.use('/users', usersRouter)
 app.use('/login', authRouter)
 
-const PORT = 5001
+const PORT = process.env.PORT || 5001
 
 app.get('/', (req, res) => {
     res.status(200).json({message: 'Welcome'})
