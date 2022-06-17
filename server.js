@@ -20,7 +20,7 @@ app.use('/login', authRouter)
 const PORT = process.env.PORT || 5001
 
 app.get('/', (req, res) => {
-    res.status(200).json({message: 'Welcome'})
+    res.status(200).json('Welcome To Skyline API')
 })
 
 app.listen(PORT, () => {
